@@ -5,10 +5,10 @@ const experiences = [
     location: "Owasso, OK",
     period: "2015 – 2019",
     bullets: [
-      "Provided excellent service to walk-in and phone customers",
-      "Installed batteries, wipers, and performed system testing",
-      "Managed inventory through accurate stocking and cycle counts",
-      "Delivered parts to commercial customers safely and on time",
+      "Assisted walk-in and phone customers with parts lookups and basic product questions",
+      "Installed batteries and wiper blades and performed basic system testing",
+      "Managed inventory through accurate stocking, cycle counts, and back stock moves",
+      "Delivered parts safely and on time to commercial customers",
     ],
   },
   {
@@ -17,9 +17,9 @@ const experiences = [
     location: "Tulsa, OK",
     period: "2011 – 2016",
     bullets: [
-      "Coordinated software shipments ensuring regulatory compliance",
-      "Purchased supplies to keep operations running smoothly",
-      "Created flow charts to help team understand new procedures",
+      "Coordinated software shipments in line with State and Tribal regulations",
+      "Ordered supplies and materials to support ongoing operations",
+      "Created simple flow charts to help coworkers understand new procedures and workflows",
     ],
   },
 ];
@@ -31,20 +31,23 @@ const training = [
     location: "Tulsa, OK",
     period: "December 2025",
     bullets: [
-      "Maintained high cleanliness standards during peak hours",
-      "Sanitized surfaces and managed waste removal efficiently",
-      "Restocked service stations with condiments and supplies",
+      "Maintained cleanliness and organization of the dining area during peak hours",
+      "Sanitized tables, chairs, and high-touch surfaces promptly after guest use",
+      "Swept and spot-mopped floors to remove debris and reduce slip hazards",
+      "Emptied trash receptacles and replaced liners as needed",
+      "Restocked condiment stations, napkins, and supplies to keep service running smoothly",
     ],
   },
   {
     title: "Retail Stocker (Trainee)",
-    company: "Gabes",
+    company: "Gabe's",
     location: "Tulsa, OK",
     period: "November 2025",
     bullets: [
-      "Executed stocking duties from floor level to overhead",
-      "Organized inventory following precise store plans",
-      "Worked independently with minimal supervision",
+      "Stocked merchandise on shelves at various heights while maintaining store standards",
+      "Followed specific verbal directions for product placement and organization",
+      "Kept aisles clear and safe for customers while using inventory carts",
+      "Demonstrated ability to stay on task and work independently after instructions",
     ],
   },
 ];
@@ -55,9 +58,7 @@ const TimelineItem = ({
   item: { title: string; company: string; location: string; period: string; bullets: string[] };
 }) => (
   <div className="relative pl-8 pb-10 last:pb-0 group">
-    {/* Timeline line */}
     <div className="absolute left-0 top-2 bottom-0 w-px bg-border group-last:bg-transparent" />
-    {/* Timeline dot */}
     <div className="absolute left-0 top-2 w-2 h-2 -translate-x-[3.5px] rounded-full bg-primary shadow-glow" />
 
     <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
@@ -85,7 +86,6 @@ const ExperienceSection = () => {
     <section className="py-20 bg-card/50" id="experience">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Employment */}
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
               Work <span className="text-gradient">Experience</span>
@@ -100,7 +100,6 @@ const ExperienceSection = () => {
             </div>
           </div>
 
-          {/* Vocational Training */}
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
               Recent <span className="text-gradient">Training</span>

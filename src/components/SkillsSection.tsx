@@ -1,25 +1,55 @@
-import { Shield, Wrench, Monitor, Users } from "lucide-react";
+import { Wrench, SprayCan, HardHat, Shield, Monitor } from "lucide-react";
 
 const skills = [
   {
     icon: Wrench,
     title: "Operations",
-    items: ["Retail Stocking", "Inventory Control", "Cycle Counting", "Merchandising"],
+    items: [
+      "Retail stocking and facing",
+      "Inventory control and cycle counting",
+      "Merchandising and shelf organization",
+      "Backroom and sales floor replenishment",
+    ],
+  },
+  {
+    icon: SprayCan,
+    title: "Facility & Lobby",
+    items: [
+      "Dining room and lobby cleaning",
+      "Table and surface sanitizing",
+      "Sweeping, spot mopping, and floor care",
+      "Trash removal and restocking supplies",
+    ],
+  },
+  {
+    icon: HardHat,
+    title: "Equipment & Tools",
+    items: [
+      "Forklift operation training (NSC)",
+      "Pallet jacks, rolling carts, U-boats",
+      "RF scanners and handheld devices",
+      "Step stools and ladders",
+    ],
   },
   {
     icon: Shield,
-    title: "Safety & Certifications",
-    items: ["OSHA-10 Certified", "Forklift (NSC)", "Chemical Safety", "Hazard Awareness"],
+    title: "Safety",
+    items: [
+      "OSHA-10 certified",
+      "Chemical and cleaning safety",
+      "Hazard awareness (wet floors, lifting, carts)",
+      "Proper PPE usage",
+    ],
   },
   {
     icon: Monitor,
-    title: "Technical",
-    items: ["Microsoft Office", "Windows OS", "Computer Troubleshooting", "RF Scanners"],
-  },
-  {
-    icon: Users,
-    title: "Work Ethic",
-    items: ["Punctual & Dependable", "Independent Worker", "Follows Instructions", "Team Player"],
+    title: "Technical & Soft Skills",
+    items: [
+      "Microsoft Office and Windows",
+      "Basic computer troubleshooting",
+      "Punctuality and consistent attendance",
+      "Follows verbal instructions and feedback",
+    ],
   },
 ];
 
@@ -31,10 +61,10 @@ const SkillsSection = () => {
           Core <span className="text-gradient">Competencies</span>
         </h2>
         <p className="text-muted-foreground mb-12 max-w-lg">
-          A diverse skill set built across retail, logistics, and facility operations.
+          A diverse skill set built across retail, facility maintenance, and logistics.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {skills.map((skill) => (
             <div
               key={skill.title}

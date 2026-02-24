@@ -1,26 +1,31 @@
-import { ShieldCheck, Truck, Clock, Award } from "lucide-react";
+import { ShieldCheck, Clock, Users, CheckCircle, Sparkles } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const highlights = [
   {
+    icon: Clock,
+    title: "Reliable & Consistent",
+    description: "Strong work ethic with consistent attendance and punctuality",
+  },
+  {
     icon: ShieldCheck,
     title: "OSHA-10 Certified",
-    description: "Workplace safety trained & certified",
+    description: "Safety trained with experience around chemicals, ladders, carts, and cleaning",
   },
   {
-    icon: Truck,
-    title: "CDL Training",
-    description: "Professional truck driver program completed",
+    icon: Users,
+    title: "Professional & Courteous",
+    description: "Comfortable interacting with customers and coworkers",
   },
   {
-    icon: Award,
-    title: "8+ Years Experience",
-    description: "Retail, warehouse & automotive roles",
+    icon: CheckCircle,
+    title: "Works Independently",
+    description: "Follows verbal instructions with minimal supervision needed",
   },
   {
-    icon: Clock,
-    title: "Available Now",
-    description: "Ready for part-time positions immediately",
+    icon: Sparkles,
+    title: "Clean & Organized",
+    description: "Maintains clean, organized, and safe work areas in busy environments",
   },
 ];
 
@@ -35,11 +40,11 @@ const HighlightsSection = () => {
             Why Hire Phillip
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-            Quick <span className="text-gradient">Facts</span>
+            Key <span className="text-gradient">Strengths</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {highlights.map((item, i) => {
             const cardRef = useScrollReveal();
             return (
