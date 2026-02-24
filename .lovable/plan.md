@@ -1,57 +1,54 @@
+# Update Portfolio Content and Favicon
 
+## Content Updates
 
-# Enhancing Phillip's Portfolio for Maximum Hiring Impact
+Comprehensive rewrite of the portfolio using the new, more detailed copy Phillip provided. This makes the site significantly more employer-friendly by adding accommodations info, target roles, and richer descriptions.
 
-## What We'll Add
+### Key Content Changes
 
-### 1. Sticky Navigation Bar
-A fixed header at the top of the page with smooth-scroll links to each section (About, Skills, Experience, Education, Contact). This makes it easy for employers to jump to the section they care about most, and keeps the "Contact" button always visible.
+&nbsp;
 
-### 2. "About Me" Personal Summary Section
-A dedicated section right after the hero with a compelling 2-3 sentence personal pitch highlighting Phillip's strengths: reliability, certifications, willingness to learn, and availability. This gives employers a quick snapshot of who Phillip is as a worker.
+- **About Section**: Rewrite with the new personal summary, including mobility device accommodation details
+- **Highlights Section**: Update cards to reflect the new "Why Hire Phillip" bullet points
+- **Skills Section**: Restructure into 4 updated categories -- Operations, Facility and Lobby Maintenance, Equipment and Tools, Safety (plus Technical and Soft Skills folded in)
+- **Experience Section**: Expand bullet points for all roles with the richer descriptions provided
+- **New "Target Roles" Section**: Add a new section listing the types of part-time roles Phillip is seeking (Retail, Restaurant/Hospitality, Facility Support, Light Warehouse)
+- **New "Availability" Section**: Flexible scheduling, daytime/evening/weekend, Tulsa area
+- **Contact Section**: Update email, reinforce messaging
+- **Hero Section**: Update tagline and description to match new tone
 
-### 3. Downloadable PDF Resume Button
-A prominent button in the hero section that lets employers download Phillip's resume as a PDF with one click. This is critical -- many hiring managers want a traditional resume on file.
+### Favicon
 
-### 4. "Why Hire Phillip" Highlights Section
-A visually distinct section with 3-4 bold stat-like callouts, for example:
-- "OSHA-10 Certified" 
-- "8+ Years Professional Experience"
-- "CDL Training Completed"
-- "Available Immediately"
+- Waiting for user to provide an image or URL before updating
 
-These act as quick trust signals that catch an employer's eye in seconds.
+## Files to Modify
 
-### 5. Stronger Call-to-Action in Contact Section
-Add a brief message reinforcing Phillip's eagerness and availability, plus a secondary "Download Resume" button alongside the email and phone buttons.
+- `src/components/HeroSection.tsx` -- Updated tagline, description, and email
+- `src/components/AboutSection.tsx` -- Full rewrite with new summary and accommodation info
+- `src/components/HighlightsSection.tsx` -- Updated highlight cards
+- `src/components/SkillsSection.tsx` -- Restructured skill categories with new items
+- `src/components/ExperienceSection.tsx` -- Expanded bullet points for all roles
+- `src/components/ContactSection.tsx` -- Updated email and messaging
 
-### 6. Scroll-Triggered Animations
-Add subtle fade-in animations as sections enter the viewport using Intersection Observer. This makes the portfolio feel more polished and professional without being distracting.
+## New Files
 
----
+- `src/components/TargetRolesSection.tsx` -- New section showcasing the types of roles Phillip is seeking
+- `src/components/AvailabilitySection.tsx` -- Small section with availability and scheduling info
 
-## Technical Details
+## Modified Files
 
-### New Files
-- `src/components/Navbar.tsx` -- Sticky navigation with smooth scroll links and a highlighted "Contact" CTA button
-- `src/components/AboutSection.tsx` -- Personal summary with a warm, employer-friendly tone
-- `src/components/HighlightsSection.tsx` -- Grid of 4 bold stat cards (certifications, experience years, availability)
+- `src/pages/Index.tsx` -- Add new sections to the page layout (Target Roles after About, Availability before Contact)
 
-### Modified Files
-- `src/pages/Index.tsx` -- Add Navbar, AboutSection, and HighlightsSection to the page layout
-- `src/components/HeroSection.tsx` -- Add a "Download Resume" button linking to the PDF in the public folder
-- `src/components/ContactSection.tsx` -- Add a secondary "Download Resume" button and stronger messaging
-- `src/index.css` -- Minor animation utility additions for scroll-triggered reveals
-- `public/` -- Add Phillip's resume PDF as a downloadable file
+## Section Order (top to bottom)
 
-### Section Order (top to bottom)
 1. Navbar (sticky)
 2. Hero (name, tagline, contact info, download resume)
-3. About Me (personal pitch)
-4. Highlights (stat cards -- certifications, years experience, availability)
-5. Core Competencies (existing skills grid)
-6. Work Experience & Training (existing timeline)
-7. Education & Certifications (existing cards)
-8. Contact (enhanced CTA)
-9. Footer
-
+3. About Me (personal pitch with accommodation note)
+4. Highlights (why hire Phillip)
+5. Target Part-Time Roles (new)
+6. Core Competencies (updated skills grid)
+7. Work Experience and Training (expanded timeline)
+8. Education and Certifications (existing)
+9. Availability (new)
+10. Contact (updated email and messaging)
+11. Footer
