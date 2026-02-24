@@ -2,9 +2,11 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import HighlightsSection from "@/components/HighlightsSection";
+import TargetRolesSection from "@/components/TargetRolesSection";
 import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
+import AvailabilitySection from "@/components/AvailabilitySection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -14,9 +16,11 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
+      <TargetRolesSection />
       <SkillsSection />
       <ExperienceSection />
       <EducationSection />
+      <AvailabilitySection />
       <ContactSection />
 
       <footer className="py-6 text-center text-xs text-muted-foreground border-t border-border">

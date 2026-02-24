@@ -20,7 +20,7 @@ const ContactSection = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="shadow-glow">
-            <a href="mailto:plgroves66@gmail.com">
+            <a href="mailto:pgroves1066@gmail.com">
               <Mail className="w-5 h-5" />
               Email Phillip
             </a>
