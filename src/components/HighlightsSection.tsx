@@ -45,23 +45,18 @@ const HighlightsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {highlights.map((item, i) => {
-            const cardRef = useScrollReveal();
-            return (
-              <div
-                key={item.title}
-                ref={cardRef}
-                className="scroll-reveal group bg-card border border-border rounded-xl p-6 text-center hover:border-primary/40 hover:shadow-glow transition-all duration-300"
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="font-display font-bold text-foreground text-lg mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+          {highlights.map((item, i) => (
+            <div
+              key={item.title}
+              className="group bg-card border border-border rounded-xl p-6 text-center hover:border-primary/40 hover:shadow-glow transition-all duration-300"
+            >
+              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <item.icon className="w-7 h-7 text-primary" />
               </div>
-            );
-          })}
+              <h3 className="font-display font-bold text-foreground text-lg mb-1">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
