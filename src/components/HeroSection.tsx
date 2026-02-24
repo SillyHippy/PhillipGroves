@@ -34,9 +34,9 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
-            <a href="mailto:pgroves1066@gmail.com" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+            <a href="mailto:plgroves66@gmail.com" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
               <Mail className="w-4 h-4 text-primary" />
-              pgroves1066@gmail.com
+              plgroves66@gmail.com
             </a>
             <a href="tel:9186883730" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4 text-primary" />
